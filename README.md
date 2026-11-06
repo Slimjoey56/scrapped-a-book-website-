@@ -1,84 +1,60 @@
-# scrapped-a-book-website-
-📚 Web Scraping & Exploratory Data Analysis of Online Book Prices 📌 Project Overview
+# Book Price Web Scraping and Exploratory Analysis
 
-This project demonstrates an end-to-end data workflow where book data is scraped from a live website, cleaned, analyzed, and visualized using Python. The goal is to extract structured insights from unstructured web data and present meaningful patterns through exploratory data analysis (EDA).
+This project uses Python to collect book listings from [Books to Scrape](https://books.toscrape.com/), prepare the extracted information, and explore pricing and rating patterns.
 
-The project focuses on real-world challenges such as HTML parsing, text cleaning, and data transformation.
+## Project Overview
 
-🌐 Data Source
+Web pages are designed for readers, not for analysis. This notebook demonstrates how to turn HTML content into structured data that can be inspected, cleaned, visualised, and exported.
 
-Website: https://books.toscrape.com
+## Workflow
 
-Type: Public educational website designed for web-scraping practice
+1. Retrieve HTML pages using Requests.
+2. Parse book listings with BeautifulSoup.
+3. Extract available book attributes.
+4. Clean text and convert values into analysable formats.
+5. Explore price and rating distributions.
+6. Visualise the results and save a CSV dataset.
 
-🎯 Objectives
+## Tools
 
-Scrape structured data from a live website
+- Python
+- Requests
+- BeautifulSoup
+- Pandas
+- Matplotlib
+- Seaborn
+- Jupyter Notebook
 
-Convert raw HTML into an analyzable dataset
+## Repository Contents
 
-Handle real-world text and encoding issues
+```text
+.
+├── main.ipynb
+├── books_data.csv
+├── requirements.txt
+└── README.md
+```
 
-Perform exploratory data analysis
+## Run the Analysis
 
-Visualize trends and patterns in pricing and ratings
+Install the listed dependencies and open the notebook:
 
-🧠 Skills Demonstrated
+```bash
+pip install -r requirements.txt
+jupyter notebook
+```
 
-Web scraping with requests and BeautifulSoup
+Execute `main.ipynb` from top to bottom. The website's HTML may change over time, so extraction logic may require maintenance.
 
-HTML structure inspection and parsing
+## Interpretation
 
-Data cleaning and transformation using pandas
+The notebook explores differences in listed book prices and ratings. Any observed relationship is descriptive and should not be interpreted as evidence that ratings cause higher prices.
 
-Exploratory data analysis (EDA)
+## Data Source
 
-Data visualization using matplotlib and seaborn
+[Books to Scrape](https://books.toscrape.com/) is an educational website designed for scraping practice.
 
-Writing production-ready, readable Python code
+## Author
 
-🛠️ Tools & Libraries
-
-Python
-
-Requests
-
-BeautifulSoup
-
-Pandas
-
-Matplotlib
-
-Seaborn
-
-🔄 Project Workflow
-
-Sent HTTP requests to retrieve HTML content
-
-Parsed HTML into a navigable structure
-
-Extracted relevant data fields from each book
-
-Cleaned text data and handled encoding issues
-
-Converted categorical ratings into numeric values
-
-Performed exploratory data analysis
-
-Visualized pricing and rating trends
-
-Saved the final dataset for reuse
-
-📈 Key Insights
-
-Most books fall within a mid-range price band
-
-Higher-rated books tend to have slightly higher average prices
-
-The majority of books are listed as available in stock
-
-Encoding and formatting issues are common in real-world scraped data
-
-👤 Author
-
-Jehosaphat BrobbeyImpiani Jnr. Data Scientist | Python | Data Analysis | Web Scraping
+Jehosaphat Brobbey Impiani  
+[GitHub](https://github.com/Slimjoey56)
